@@ -1,5 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  FriendListContainer,
+  Status,
+  Avatar,
+  Name,
+} from './FriendList.styled.jsx';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (

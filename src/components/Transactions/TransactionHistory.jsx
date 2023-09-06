@@ -1,5 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  TransactionTable,
+  TableHeader,
+  TableHeaderCell,
+  TableBody,
+  TableRow,
+  TableCell,
+} from './TransactionHistory.styled.jsx';
 
 const TransactionHistory = ({ items }) => {
   return (

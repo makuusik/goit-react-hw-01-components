@@ -1,5 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {
+  ProfileContainer,
+  DescriptionContainer,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+  StatsList,
+  StatsItem,
+  Label,
+  Quantity,
+} from './Profile.styled.jsx';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
