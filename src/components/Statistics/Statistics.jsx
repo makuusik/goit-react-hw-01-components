@@ -7,21 +7,21 @@ import {
   StatItem,
   Label,
   Percentage,
-} from './Statistics.styled.jsx';
+} from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-      <ul className="stat-list">
-        {stats.map(({ id, label, percentage }) => (
-          <li className="item" key={id}>
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
-          </li>
+    <StatisticsContainer>
+      {title && <Title>{title}</Title>}
+      <StatList>
+        {stats.map(stat => (
+          <StatItem key={stat.id}>
+            <Label>{stat.label}</Label>
+            <Percentage>{stat.percentage}%</Percentage>
+          </StatItem>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </StatisticsContainer>
   );
 };
 
